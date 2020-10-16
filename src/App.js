@@ -10,8 +10,8 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [alert, setAlert] = useState("");
 
-  const APP_ID = "4e9f05eb";
-  const APP_KEY = "9b904d703fa0d46a88ce1ac63f29f498";
+  const APP_ID = "d4efaa1b";
+  const APP_KEY = "faebc9c18dfd208f91a051b776754fdd";
 
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
@@ -48,9 +48,9 @@ function App() {
           onChange={onChange}
           value={query}
           autoComplete="off"
-          placeholder="Search Food"
+          placeholder="food"
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Now" />
       </form>
       <div className="recipes">
         {recipes !== [] &&
